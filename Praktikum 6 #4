@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double x, y, z, a;
+    cout << "Masukkan nilai x: ";
+    cin >> x;
+    cout << "Masukkan nilai y: ";
+    cin >> y;
+    cout << "Masukkan nilai z: ";
+    cin >> z;
+
+    a = (x + y) + (z - y);
+    cout << "Nilai a adalah: " << a << endl;
+
+    return 0;
+}
