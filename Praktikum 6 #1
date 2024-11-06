@@ -1,0 +1,16 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    double alas, tinggi, sisi_miring;
+    cout << "Masukkan panjang alas: ";
+    cin >> alas;
+    cout << "Masukkan tinggi: ";
+    cin >> tinggi;
+
+    sisi_miring = sqrt(pow(alas, 2) + pow(tinggi, 2));
+    cout << "Sisi miring segitiga adalah: " << sisi_miring << endl;
+
+    return 0;
+}
