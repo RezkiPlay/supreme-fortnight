@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+int main (){
+	
+	int a, b ;
+	int c, d, e, f, g;
+	
+	cout << "Program  Kalkulator aritmatika " << endl;
+	cout << "Masukkan Nilai a : " ;
+	cin >> a;
+	
+	cout << "Masukkan Nilai b : " ;
+	cin >> b;
+	
+	c = a + b ;
+	d = a - b ;
+	e = a * b ; 
+	
+	cout << "=====================" << endl;
+
+	if (b != 0){ 
+	f = a / b;
+	g = a % b;
+	} else cout << "Pembagian dan Modulus tidak boleh diisi dengan angka 0 pada bagian b" << endl;
+	
+	
+	cout << "Hasil Dari c adalah : " << c << endl;
+	cout << "Hasil Dari d adalah : " << d << endl;
+	cout << "Hasil Dari e adalah : " << e << endl;
+	
+	if (b != 0){	
+	cout << "Hasil Dari f adalah : " << f << endl;
+	cout << "Hasil Dari g adalah : " << g << endl;
+}
+	
+	return 0;
+}
