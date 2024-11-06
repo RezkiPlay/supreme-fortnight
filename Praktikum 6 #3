@@ -1,0 +1,16 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    double x, y, E;
+    cout << "Masukkan nilai x: ";
+    cin >> x;
+    cout << "Masukkan nilai y: ";
+    cin >> y;
+
+    E = sqrt(5 * pow(x, 3) - 4 * y);
+    cout << "Nilai E adalah: " << E << endl;
+
+    return 0;
+}
