@@ -1,0 +1,55 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    char ulangProgram = 'y';
+
+    // Loop utama untuk mengulangi seluruh program
+    while (ulangProgram == 'y' || ulangProgram == 'Y') {
+        int A, B;
+        int C, D, E, F, G;
+        
+        char ulangInput = 'y';
+
+        // Loop untuk input nilai A dan B dan melakukan perhitungan
+        while (ulangInput == 'y' || ulangInput == 'Y') {
+            // Meminta input nilai A dan B
+            cout << "\nMasukkan nilai A: ";
+            cin >> A;
+            cout << "Masukkan nilai B: ";
+            cin >> B;
+
+            // Operasi aritmatika
+            C = A + B;
+            D = A - B;
+            E = A * B;
+
+            // Menampilkan hasil operasi
+            cout << "\nHasil Operasi:\n";
+            cout << "A + B = " << C << endl;
+            cout << "A - B = " << D << endl;
+            cout << "A * B = " << E << endl;
+
+            // Pengecekan untuk pembagian dan modulus jika B tidak sama dengan 0
+            if (B != 0) {
+                F = A / B;
+                G = A % B;
+                cout << "A / B = " << F << endl;
+                cout << "A % B = " << G << endl;
+            } else {
+                cout << "Pembagian dan modulus tidak dapat dilakukan karena B bernilai 0." << endl;
+            }
+
+            // Tanya ulang untuk menghitung nilai A dan B lainnya
+            cout << "\nApakah Anda ingin menginput nilai A dan B lainnya? (y/n): ";
+            cin >> ulangInput;
+        }
+
+        // Tanya apakah pengguna ingin mengulangi seluruh program
+        cout << "\nApakah Anda ingin mengulangi program ini? (y/n): ";
+        cin >> ulangProgram;
+    }
+
+    cout << "\nProgram selesai." << endl;
+    return 0;
+}
